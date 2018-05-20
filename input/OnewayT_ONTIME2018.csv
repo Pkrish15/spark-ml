@@ -1,0 +1,21 @@
+Latest available 2018 data is February  
+UNIQUE_CARRIER,Description,Sum(ARR_DEL15)
+"9E","Endeavor Air Inc.",6335
+"AA","American Airlines Inc.",23450
+"AS","Alaska Airlines Inc.",3470
+"B6","JetBlue Airways",12351
+"DL","Delta Air Lines Inc.",17391
+"EV","ExpressJet Airlines Inc.",8127
+"F9","Frontier Airlines Inc.",4392
+"G4","Allegiant Air",2857
+"HA","Hawaiian Airlines Inc.",1909
+"MQ","Envoy Air",9500
+"NK","Spirit Air Lines",4191
+"OH","PSA Airlines Inc.",10113
+"OO","SkyWest Airlines Inc.",25175
+"UA","United Air Lines Inc.",12113
+"VX","Virgin America",1798
+"WN","Southwest Airlines Co.",37243
+"YV","Mesa Airlines Inc.",5972
+"YX","Republic Airlines",8673
+"All Rows","All Rows (including those not displayed)",195060
