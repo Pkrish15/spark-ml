@@ -6,9 +6,11 @@
 4) https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Prognostic) - For Breast Cancer Prognostic Prediction.
 5) https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/wdbc.names - For Breast cancer diagnostic Prediction.
 # Use Cases Addressed
-a) Flight Delay Prediction
-b) Optical Character Recognization
-c) Breast Cancer Prognostic and Diagnostic Prediction.
+a) Flight Delay Prediction <br>
+b) Optical Character Recognization <br>
+c) Breast Cancer Prognostic and Diagnostic Prediction.<br>
+d) CreditCard Fraud Detection (Working on it - Facing some minor exceptions) <br>
+e) Basket Analysis for Groceries (Working on it - Facing some minor exceptions) <br>
 
 # Input Data
 6) All the input data have been extracted from the above links and placed in our project folder.
