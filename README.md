@@ -5,4 +5,9 @@
 3) http://archive.ics.uci.edu/ml/index.php - For Optical Character Recognization.
 4) https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Prognostic) - For Breast Cancer Prognostic Prediction.
 5) https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/wdbc.names - For Breast cancer diagnostic Prediction.
+# Input Data
+6) All the input data have been extracted from the above links and placed in our project folder.
+
+
+
 
