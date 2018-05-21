@@ -16,15 +16,17 @@ public class JavaFPGrowthExample {
 			            .builder()
 			            .appName("JavaFPGrowthExample")
 			            .master("local[*]")
-			            .config("spark.sql.warehouse.dir", "E:/Exp/")
+			            .config("spark.sql.warehouse.dir", "/tmp/")
 			            .getOrCreate();
+		      spark.sparkContext().addJar("/home/prakrish/scala-workspace/spark-ml/target/spark-ml.jar");
 	
    //Create an initial RDD by reading the input database 
    RDD<String> data = spark.sparkContext().textFile(fileName, 1);
 	
    //Read the transactions by tab delimiter & mapping RDD(data)
-   JavaRDD<List<String>> transactions = data.toJavaRDD().map(
-                   line -> {
+   JavaRDD<List<String>> transactions = data.toJavaRDD().map(new Function<String, List<String>>(){
+                                      public List<String> call (String line)
+				      {
 				                  String[] parts = line.split(" ");
 				                  return Arrays.asList(parts);
 			                           });
