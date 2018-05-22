@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PMML xmlns="http://www.dmg.org/PMML-4_2" version="4.2">
+    <Header description="k-means clustering">
+        <Application name="Apache Spark MLlib" version="2.3.0"/>
+        <Timestamp>2018-05-23T01:38:52</Timestamp>
+    </Header>
+    <DataDictionary numberOfFields="16">
+        <DataField name="field_0" optype="continuous" dataType="double"/>
+        <DataField name="field_1" optype="continuous" dataType="double"/>
+        <DataField name="field_2" optype="continuous" dataType="double"/>
+        <DataField name="field_3" optype="continuous" dataType="double"/>
+        <DataField name="field_4" optype="continuous" dataType="double"/>
+        <DataField name="field_5" optype="continuous" dataType="double"/>
+        <DataField name="field_6" optype="continuous" dataType="double"/>
+        <DataField name="field_7" optype="continuous" dataType="double"/>
+        <DataField name="field_8" optype="continuous" dataType="double"/>
+        <DataField name="field_9" optype="continuous" dataType="double"/>
+        <DataField name="field_10" optype="continuous" dataType="double"/>
+        <DataField name="field_11" optype="continuous" dataType="double"/>
+        <DataField name="field_12" optype="continuous" dataType="double"/>
+        <DataField name="field_13" optype="continuous" dataType="double"/>
+        <DataField name="field_14" optype="continuous" dataType="double"/>
+        <DataField name="field_15" optype="continuous" dataType="double"/>
+    </DataDictionary>
+    <ClusteringModel modelName="k-means" functionName="clustering" modelClass="centerBased" numberOfClusters="4">
+        <MiningSchema>
+            <MiningField name="field_0" usageType="active"/>
+            <MiningField name="field_1" usageType="active"/>
+            <MiningField name="field_2" usageType="active"/>
+            <MiningField name="field_3" usageType="active"/>
+            <MiningField name="field_4" usageType="active"/>
+            <MiningField name="field_5" usageType="active"/>
+            <MiningField name="field_6" usageType="active"/>
+            <MiningField name="field_7" usageType="active"/>
+            <MiningField name="field_8" usageType="active"/>
+            <MiningField name="field_9" usageType="active"/>
+            <MiningField name="field_10" usageType="active"/>
+            <MiningField name="field_11" usageType="active"/>
+            <MiningField name="field_12" usageType="active"/>
+            <MiningField name="field_13" usageType="active"/>
+            <MiningField name="field_14" usageType="active"/>
+            <MiningField name="field_15" usageType="active"/>
+        </MiningSchema>
+        <ComparisonMeasure kind="distance">
+            <squaredEuclidean/>
+        </ComparisonMeasure>
+        <ClusteringField field="field_0" compareFunction="absDiff"/>
+        <ClusteringField field="field_1" compareFunction="absDiff"/>
+        <ClusteringField field="field_2" compareFunction="absDiff"/>
+        <ClusteringField field="field_3" compareFunction="absDiff"/>
+        <ClusteringField field="field_4" compareFunction="absDiff"/>
+        <ClusteringField field="field_5" compareFunction="absDiff"/>
+        <ClusteringField field="field_6" compareFunction="absDiff"/>
+        <ClusteringField field="field_7" compareFunction="absDiff"/>
+        <ClusteringField field="field_8" compareFunction="absDiff"/>
+        <ClusteringField field="field_9" compareFunction="absDiff"/>
+        <ClusteringField field="field_10" compareFunction="absDiff"/>
+        <ClusteringField field="field_11" compareFunction="absDiff"/>
+        <ClusteringField field="field_12" compareFunction="absDiff"/>
+        <ClusteringField field="field_13" compareFunction="absDiff"/>
+        <ClusteringField field="field_14" compareFunction="absDiff"/>
+        <ClusteringField field="field_15" compareFunction="absDiff"/>
+        <Cluster name="cluster_0">
+            <Array n="16" type="real">352255.7440944882 0.6653149606299212 0.031496062992125984 19.374015748031496 66864.96062992126 0.15748031496062992 0.6338582677165354 2.2086614173228347 2.248031496062992 2.7755905511811023 2474.3425196850394 57.61417322834646 3.622047244094488 0.8661417322834646 2.5216535433070866 8.948818897637794</Array>
+        </Cluster>
+        <Cluster name="cluster_1">
+            <Array n="16" type="real">138982.0324519231 0.3862980769230774 0.002403846153846154 32.78004807692308 19901.826923076926 0.013221153846153848 0.23918269230769232 2.5997596153846154 2.698317307692308 2.6646634615384617 1365.8810096153848 53.17307692307693 2.792067307692308 0.4074519230769231 1.5246394230769231 5.908653846153847</Array>
+        </Cluster>
+        <Cluster name="cluster_2">
+            <Array n="16" type="real">231499.56600660065 0.5668316831683171 0.0033003300330033004 25.107260726072607 35887.12871287129 0.04785478547854786 0.40924092409240925 2.3069306930693068 2.4372937293729375 2.702970297029703 1919.1963696369637 57.77722772277228 3.4306930693069306 0.7244224422442245 2.1056105610561056 7.6105610561056105</Array>
+        </Cluster>
+        <Cluster name="cluster_3">
+            <Array n="16" type="real">580103.3333333333 0.8466666666666667 0.08333333333333333 23.055555555555554 122922.22222222222 0.027777777777777776 0.75 2.25 2.083333333333333 2.694444444444444 2907.472222222222 59.27777777777777 3.583333333333333 1.1666666666666665 2.736111111111111 10.194444444444445</Array>
+        </Cluster>
+    </ClusteringModel>
+</PMML>
