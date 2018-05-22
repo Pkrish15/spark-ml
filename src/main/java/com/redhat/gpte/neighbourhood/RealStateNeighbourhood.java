@@ -10,16 +10,16 @@ import org.apache.spark.mllib.linalg.Vectors;
 import org.apache.spark.rdd.RDD;
 import org.apache.spark.sql.SparkSession;
 
-public class RealStateNeighbourhood implements Serializable {
+public class RealStateNeighbourhoodAnalysis implements Serializable {
 	private static final long serialVersionUID = 1L;
 	static SparkSession spark = SparkSession
-			.builder().appName("JavaLDAExample")
+			.builder().appName("RealEstateNeighbourHoodAnalysis")
 			.master("local[*]")
 			.config("spark.sql.warehouse.dir", "/tmp/")
 			.getOrCreate();
 
 	public static void main(String[] args) {
-		RDD<String> data = spark.sparkContext().textFile("input/Sarotoga_Newyork_Homes.txt",2);
+		RDD<String> data = spark.sparkContext().textFile("input/Sarotoga_Newyork_Homes.txt",1);
 		JavaRDD<Vector> parsedData = data.toJavaRDD().map(s -> {
 			String[] sarray = s.split(",");
 			double[] values = new double[sarray.length];
@@ -49,6 +49,8 @@ public class RealStateNeighbourhood implements Serializable {
 		List<Vector> houses = parsedData.collect();
 		int prediction  = clusters.predict(houses.get(0));
 		System.out.println("Prediction: "+prediction);
+		System.out.println("Output to PMML"+clusters.toPMML());
+		clusters.toPMML("NeighBourHood.pmml");
 		spark.stop();
 	}
 
